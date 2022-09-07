@@ -69,22 +69,3 @@ if __name__ == '__main__':
         print(s.valida_senha())
     except:
         print('Senha inválida')
-
-
-        # if len(self._items) == i and len(self.maiusculo) == len(self.minusculo):
-        #     return 'Senha válida'
-        # elif len(self._items) == i and len(self.maiusculo) != len(self.minusculo):
-        #     raise SenhaInvalida('Senha inválida')
-        # elif self._items[i] == self._items[i].upper():
-        #     self.maiusculo.append(self._items[i].lower())
-        #     return self.valida_senha(i+1)
-        # elif self._items[i] == self._items[i].lower():
-        #     self.minusculo.append(self._items[i])
-        #     print(len(self.maiusculo))
-        # if self.minusculo[-1] == self.maiusculo[0]:        
-        #     self.maiusculo.pop(0)
-        #     self.minusculo.pop(-1)
-        #     return self.valida_senha(i+1)
-        # else:
-        #     raise SenhaInvalida('Senha inválida')
-        #     raise SenhaInvalida('Senha inválida')
