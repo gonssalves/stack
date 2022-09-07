@@ -8,6 +8,7 @@ class PilhaArray:
 
     def __init__(self):
         self._items = []
+        self.senha = []
         self.maiusculo = []
         self.minusculo = []
         
@@ -35,7 +36,7 @@ class PilhaArray:
 
     def valida_senha(self, i=0):
         if len(self._items) == i:    
-            if len(self.maiusculo) != len(self.minusculo):
+            if len (self.maiusculo) == 0 or len(self.minusculo) == 0 or len(self.maiusculo) != len(self.minusculo):
                 raise SenhaInvalida('senha inválida')
             else:
                 self.count = 0
@@ -64,6 +65,26 @@ if __name__ == '__main__':
         s.push('d')
         s.push('b')
         s.push('a')
+    
         print(s.valida_senha())
     except:
         print('Senha inválida')
+
+
+        # if len(self._items) == i and len(self.maiusculo) == len(self.minusculo):
+        #     return 'Senha válida'
+        # elif len(self._items) == i and len(self.maiusculo) != len(self.minusculo):
+        #     raise SenhaInvalida('Senha inválida')
+        # elif self._items[i] == self._items[i].upper():
+        #     self.maiusculo.append(self._items[i].lower())
+        #     return self.valida_senha(i+1)
+        # elif self._items[i] == self._items[i].lower():
+        #     self.minusculo.append(self._items[i])
+        #     print(len(self.maiusculo))
+        # if self.minusculo[-1] == self.maiusculo[0]:        
+        #     self.maiusculo.pop(0)
+        #     self.minusculo.pop(-1)
+        #     return self.valida_senha(i+1)
+        # else:
+        #     raise SenhaInvalida('Senha inválida')
+        #     raise SenhaInvalida('Senha inválida')
